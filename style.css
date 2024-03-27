@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;  /* 1rem = 10px; */
+    scroll-behavior: smooth;
+}
+.section-heading{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* end of common style  */
+
+
+.container{
+    max-width: 90rem;
+    padding: 2rem;
+    background-color: gray;
+}
+.swipers{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+}
+
+.swiper{
+    flex: 0 0 auto;
+    width: 20rem;
+    height: 30rem;
+    margin-right: 1rem;
+}
+.swiper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
